@@ -1,16 +1,11 @@
 SuiteOf('スモークテスト');
 
-Scenario("example.comにアクセスする", ({ I }) => {
-  I.amOnPage("https://example.com");
-  I.see("Example Domain");
-});
 
-
-//Scenario('Webサイトを開きログインする', ({ I }) => {
-//  I.amOnPage("/"); // BASE_URLからの相対パスに書き換える
-//  I.click("ログインする");
-//  I.fillField("ユーザー名", "user1");
-//  I.fillField("パスワード", "super-strong-passphrase");
-// I.click("ログイン");
-//  I.see("user1 さん");
-//})
+Scenario('Webサイトを開きログインする', ({ I }) => {
+  I.amOnPage("https://fastify-webapp-sample-production-a1b8.up.railway.app/items"); 
+  I.click("ログインする");
+  I.fillField("ユーザー名", "user1");
+  I.fillField("パスワード", "super-strong-passphrase");
+  I.click("ログイン");
+  I.see("user1 さん");
+})

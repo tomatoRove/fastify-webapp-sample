@@ -1,6 +1,7 @@
 {
-  "name": "e2e",
+  "name": "codeceptjs-sample",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "codeceptjs run --steps"
@@ -11,10 +12,5 @@
   "dependencies": {
     "codeceptjs": "^3.3.7",
     "playwright": "^1.30.0"
-  },
-  "devDependencies": {
-    "allure-codeceptjs": "^2.10.0",
-    "dotenv": "^16.0.3"
-  },
-  "description": ""
+  }
 }
