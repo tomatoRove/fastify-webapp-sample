@@ -17,7 +17,7 @@ jobs:
       - name: Use Node 20
         uses: actions/setup-node@v4
         with:
-          node-verison: 20.x
+          node-version: 20.x
 
       - name: Install Playwright dependencies
         run: npx playwright install-deps
