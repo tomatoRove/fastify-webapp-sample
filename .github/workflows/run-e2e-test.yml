@@ -25,7 +25,7 @@ jobs:
 
       - name: Setup E2E test
         run: npm ci
-        working-direcory: ./e2e
+        working-directory: ./e2e
 
       - name: Run E2E test
         run: npm run test
